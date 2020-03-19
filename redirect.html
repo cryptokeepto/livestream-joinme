@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./node_modules/hellojs/dist/hello.all.js"></script>
     <title>Redirect</title>
   </head>
   <body>
     OK
 
     <script>
-      const response = hello.getAuthResponse("joinme");
-      console.log(response);
       const params = new URLSearchParams(window.location.search);
       const code = params.get("code");
       console.log(code);
