@@ -5,7 +5,7 @@
     },
     {
       scope: "start_meeting",
-      redirect_uri: "http://localhost/",
+      redirect_uri: "http://178.128.100.249/redirect",
       state: "LIVE",
       response_type: "code",
       display: "popup"
