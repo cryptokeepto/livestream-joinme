@@ -18,12 +18,12 @@ function login() {
     if (res.error) {
       const { message } = res.error;
       return alert(message);
-    } else {
-      const response = hello.getAuthResponse("joinme");
-      console.log(response);
-      const params = new URLSearchParams(window.location.search);
-      const code = params.get("code");
-      console.log(code);
     }
   });
 }
+
+const response = hello.getAuthResponse("joinme");
+console.log(response);
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
+console.log(code);
